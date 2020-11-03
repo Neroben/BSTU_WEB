@@ -22,11 +22,17 @@
 
 .panel-content-text {
     margin-top: 3px;
+    color: black;
+}
+
+.panel-content-text:hover {
+    margin-top: 3px;
+    color: red;
 }
 
 .panel-ref:hover{
     text-decoration: none;
-    color: grey
+    color: red;
 }
 
 .panel-author {
