@@ -1,0 +1,10 @@
+.main {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto minmax(200px, 200px);
+    gap: 20px;
+}

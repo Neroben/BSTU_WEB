@@ -1,0 +1,23 @@
+
+.item {
+    height: 46px;
+    background: whitesmoke;
+    border: 1px solid grey;
+}
+
+.top, .bottom {
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-between;
+}
+
+.author, .time {
+    color: grey;
+}
+
+.title {
+    max-width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

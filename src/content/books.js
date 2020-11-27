@@ -24,6 +24,14 @@ const books = [
         lastUpdate: "Last updated 3 mins ago",
         content: "Бла бла",
         image: image
+    },
+    {
+        id: 4,
+        header: "Волшебство не вызывает привыкания-3",
+        description: "Третья часть невероятных приключений Тимофея Бухлина.",
+        lastUpdate: "Last updated 3 mins ago",
+        content: "Бла бла",
+        image: image
     }
 ]
 export default books;

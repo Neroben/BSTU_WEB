@@ -1,0 +1,13 @@
+
+.high {
+    margin-top: 10px;
+}
+
+.panel-heading {
+    background-color: #ff9900;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
