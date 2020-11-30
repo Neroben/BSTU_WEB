@@ -1,0 +1,7 @@
+.main {
+  padding-top: 20px;
+
+  display: grid;
+  grid-template-columns: auto minmax(200px, 200px);
+  gap: 20px;
+}
