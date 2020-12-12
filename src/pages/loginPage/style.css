@@ -1,6 +1,6 @@
 .wrapper {
     background-color: black;
-    height: calc(100vh - 56px) !important;
+    height: calc(100vh) !important;
 }
 
 .main-btn {
@@ -128,10 +128,10 @@
 
 .form-horizontal .btn {
     float: right;
-    font-size: 14px;
+    font-size: 50px;
     color: #fff;
-    background: #ff9900;
-    border-radius: 30px;
+    background: #2a5885;
+    border-radius: 60px;
     padding: 10px 25px;
     border: none;
     text-transform: capitalize;

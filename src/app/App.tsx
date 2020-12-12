@@ -6,7 +6,6 @@ import Routes from "../routes/routes";
 const App = () => {
     return (
         <div>
-            <Header/>
             <Routes />
         </div>
     );

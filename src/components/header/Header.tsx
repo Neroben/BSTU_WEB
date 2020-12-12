@@ -9,12 +9,9 @@ const Header = () => {
         history.push('/')
     }
 
-    const handleClickSignIn = () => {
-        history.push('/login')
-    }
-
-    const handleClickReg = () => {
-        history.push('/reg')
+    const handleClickLogout = () => {
+        localStorage.setItem("token", "");
+        history.push('/')
     }
 
     return (
@@ -104,11 +101,8 @@ const Header = () => {
                         Поиск
                     </button>
                 </form>
-                <button className={`${s.leftBtn} btn btn-outline-dark my-2 my-sm-0`} onClick={handleClickSignIn}>
-                    Войти
-                </button>
-                <button className="btn btn-outline-dark my-2 my-sm-0" onClick={handleClickReg}>
-                    Зарегистрироваться
+                <button className={`${s.leftBtn} btn btn-outline-dark my-2 my-sm-0`} onClick={handleClickLogout}>
+                    Выйти
                 </button>
             </div>
         </nav>
