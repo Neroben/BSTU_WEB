@@ -4,11 +4,17 @@ import Comments from '../../components/Comments/Comments'
 
 import s from './style.module.scss'
 import Header from "../../components/header/Header";
+import {authService} from "../../services/auth-service/auth-service";
 
 const MainPage = () => {
 
     React.useEffect(() => {
-        localStorage.setItem('token', window.location.href.split('/')[4])
+        if (localStorage.getItem('token') == null)
+            localStorage.setItem('token', window.location.href.split('/')[4])
+    }, [])
+
+    React.useEffect(() => {
+        authService.checkTokenEvent()
     }, [])
 
     return (

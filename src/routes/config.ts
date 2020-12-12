@@ -1,5 +1,6 @@
 import {lazy} from 'react'
 import {AppRoute} from "./types";
+import AuthPage from "../pages/authPage/authPage";
 
 const MainPage = lazy(() => import('../pages/mainPage/mainPage'));
 const LoginPage = lazy(() => import('../pages/loginPage/loginPage'));
@@ -27,7 +28,7 @@ export const routes: AppRoute[] = [
     {
         title: 'getToken',
         path: '/authorize/',
-        component: MainPage,
+        component: AuthPage,
         exact: false,
     },
 ]

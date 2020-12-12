@@ -6,11 +6,11 @@ import s from './style.module.scss'
 
 const Header = () => {
     const handleClick = () => {
-        history.push('/')
+        history.push('/main')
     }
 
     const handleClickLogout = () => {
-        localStorage.setItem("token", "");
+        localStorage.removeItem('token')
         history.push('/')
     }
 
