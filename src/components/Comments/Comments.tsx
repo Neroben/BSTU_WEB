@@ -3,7 +3,6 @@ import React from 'react'
 import s from './style.module.scss'
 import {useStore} from "effector-react";
 import {commentsService} from "../../services/comments-service/comments-service";
-import {bookService} from "../../services/book-service/book-service";
 
 const Comments = () => {
 

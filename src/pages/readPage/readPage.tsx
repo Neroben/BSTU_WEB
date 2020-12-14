@@ -1,10 +1,17 @@
 import React from 'react'
 
 import Header from "../../components/header/Header";
+import {authService} from "../../services/auth-service/auth-service";
+import {useStore} from "effector-react";
+import {bookService} from "../../services/book-service/book-service";
 
 const ReadPage = () => {
 
+    const books = useStore(bookService.$books)
 
+    React.useEffect(() => {
+        authService.checkTokenEvent()
+    }, [])
 
     return (
         <div>

@@ -22,7 +22,10 @@
 
     .author,
     .time {
+      line-height: 20px;
       color: grey;
+      overflow: hidden;
+      height: 20px;
     }
 
     .title {
