@@ -13,6 +13,12 @@ const getBookChapter = readDomain.createEvent()
 const $read = readDomain.createStore<IRead | null>(null)
     .on(getReadFx.doneData, (_, read) => read)
 
+getBookChapter.watch(() => getReadFx({
+    token: localStorage.getItem('token') ?? '',
+    bookId: +window.location.href.split('/')[4],
+    chapter: +window.location.href.split('/')[5],
+}))
+
 export const readService = {
     $read,
     getBookChapter

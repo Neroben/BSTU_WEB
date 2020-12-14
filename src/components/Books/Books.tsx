@@ -10,7 +10,7 @@ const Books = () => {
     const books = useStore(bookService.$books)
 
     const handleClick = (id:number) => {
-        history.push(`/book/${id}`);
+        history.push(`/book/${id}/0`);
     }
 
     React.useEffect(() => {

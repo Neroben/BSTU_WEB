@@ -4,12 +4,9 @@ import {IRead} from "../../services/read-service/type";
 
 const ReadApi = {
     getBookChapter: async (data: Read) => {
-        const books = await http.get<IRead>(`/book/all/${data.bookId}`, {
+        const books = await http.get<IRead>(`/book/chapter/${data.bookId}/${data.chapter}`, {
             headers: {
                 'Authorization' : `Bearer ${data.token}`,
-            },
-            params: {
-                "chapter" : data.chapter,
             }
         })
         return books.data
