@@ -21,7 +21,7 @@ export const routes: AppRoute[] = [
     },
     {
         title: 'Boo',
-        path: '/book',
+        path: '/book/*',
         component: ReadPage,
         exact: true,
     },

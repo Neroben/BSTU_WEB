@@ -1,4 +1,4 @@
-import {createDomain, sample} from 'effector'
+import {createDomain} from 'effector'
 import {createReEffect} from 'effector-reeffect'
 import BookApi from "../../api/book-api/book-api";
 import {IBooks} from "./type";

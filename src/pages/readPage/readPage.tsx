@@ -1,12 +1,11 @@
 import React from 'react'
 
-import {Button} from '@material-ui/core'
-import {Link} from 'react-router-dom'
-
-import s from './style.module.scss'
 import Header from "../../components/header/Header";
 
 const ReadPage = () => {
+
+
+
     return (
         <div>
             <Header/>
