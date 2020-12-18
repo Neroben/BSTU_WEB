@@ -25,7 +25,7 @@ const MainPage = () => {
                     <Books/>
                 </div>
                 <Comments/>
-            </div>
+            </div>x
         </div>
     )
 }
